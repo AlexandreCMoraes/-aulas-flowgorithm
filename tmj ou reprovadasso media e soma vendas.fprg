@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alexc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-04 07:28:32 "/>
+        <attribute name="created" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwNzoxMTo1MCAiOzI0MjY="/>
+        <attribute name="edited" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwNzoyODozMiAiOzM7MjU0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media, soma" type="Real" array="False" size=""/>
+            <input variable="janeiro"/>
+            <input variable="fevereiro"/>
+            <input variable="marco"/>
+            <input variable="abril"/>
+            <assign variable="soma" expression="janeiro+fevereiro+marco+abril"/>
+            <assign variable="media" expression="soma/4"/>
+            <output expression="&quot;sua m&#233;dia no beco diagonal &#233;:&quot;" newline="True"/>
+            <output expression="media" newline="True"/>
+            <output expression="&quot;seu total no beco diagonal &#233;:&quot;" newline="True"/>
+            <output expression="soma" newline="True"/>
+            <if expression="media&gt;=7000">
+                <then>
+                    <output expression="&quot;TMJ abono 10%&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voc&#234; foi reprovadasso abono de 3%&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

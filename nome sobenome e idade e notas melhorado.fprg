@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alexc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-04 08:31:34 "/>
+        <attribute name="created" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwNzo1NDoyNiAiOzI0MzY="/>
+        <attribute name="edited" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwODozMTozNCAiOzM7MjU0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome, idade" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, soma, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite seu sobrenome:&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;E qual sua idade?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Insira nota1&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Insira nota2&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Insira nota3&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <output expression="&quot;Insira nota4&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
+            <assign variable="media" expression="soma/4"/>
+            <output expression="&quot;O seu nome &#233;:&quot; &amp; nome &amp; &quot; e seu sobrenome:&quot; &amp; sobrenome &amp; &quot; E qual sua idade?:&quot; &amp; idade &amp; &quot; seu total &#233;: &quot; &amp; soma &amp; &quot; e sua m&#233;dia &#233;: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

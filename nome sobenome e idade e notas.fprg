@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alexc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-04 08:19:59 "/>
+        <attribute name="created" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwNzo1NDoyNiAiOzI0MzY="/>
+        <attribute name="edited" value="YWxleGM7QUxFLUxBUFRPUDsyMDIwLTA1LTA0OyIwODoxOTo1OSAiOzI7MjU1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome, idade" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o seu nome&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite seu sobrenome:&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;E qual sua idade?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="soma" expression="nota1+nota2+nota3+nota4"/>
+            <assign variable="media" expression="soma/4"/>
+            <output expression="&quot;O seu nome &#233;:&quot; &amp; nome &amp; &quot; e seu sobrenome:&quot; &amp; sobrenome &amp; &quot; E qual sua idade?:&quot; &amp; idade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
